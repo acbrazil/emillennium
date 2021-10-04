@@ -1,0 +1,177 @@
+body{
+	background-color: #c8a2c8;
+	text-shadow: 1px 1px black;
+}
+
+h1{
+	color:#4b204b;
+	text-align: center;
+
+}
+
+.menu{
+	height: 50px;
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	border: solid;
+	width: 300px;
+	color: #ffff;
+	border:solid 1px #993399;
+	border-radius: 6px;
+	background-color:#993399;
+	text-align: center;
+
+}
+
+#home{
+	width: 100px;
+	margin: 0px;
+}
+
+#firstm{
+	width: 100px;
+	margin: 0px;
+}
+
+#secondm{
+	width: 100px;
+	margin: 0px;
+}
+
+#home:hover{
+	color:#993399 ;
+	background-color: #ffff;
+	border-radius: 5px;
+
+}
+
+#firstm:hover{
+	color:#993399 ;
+	background-color: #ffff;
+	border-radius: 5px;
+
+}
+
+#secondm:hover{
+	color:#993399 ;
+	background-color: #ffff;
+	border-radius: 5px;
+
+}
+
+#buttons{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+
+
+#basico{
+	font-size: 20px;
+	width: 200px;
+	height: 70px;
+
+}
+
+#especifico{
+	width: 200px;
+	height: 70px;
+	font-size: 20px;
+}
+
+
+#manualb{
+	display: none;
+	margin-left: 50px;
+}
+
+#manuale{
+	display: none;
+	margin-left: 50px;
+}
+
+button{
+	color: #ffff;
+	border:solid 1px #993399;
+	border-radius: 6px;
+	background-color:#993399;
+	padding: 5px;
+	margin-right: 30px;
+}
+button:hover{
+	color:#993399 ;
+	background-color: #ffff;
+}
+
+.container{
+	
+	color: #ffff;
+	background-color: #ac58aa;
+	margin:auto;
+	width: 800px;
+	text-align: justify-all;
+	border:double 4mm #4b204b ;
+	display: none;
+
+}
+
+img{
+	width: 620px;
+	margin-bottom: 20px;
+	border: solid 5px;
+}
+
+a{
+	color: yellow;
+}
+
+a:link {
+ text-decoration: underline;
+}
+
+a:hover {
+ text-decoration: underline;
+ color: #ffff ;
+}
+
+
+.containervenda{
+	color: #ffff;
+	background-color: #ac58aa;
+	margin:auto;
+	width: 800px;
+	text-align: justify-all;
+	border:double 4mm #4b204b ;
+
+}
+
+#voltar{
+	height: 50px;
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	border: solid;
+	width: 200px;
+	color: #ffff;
+	border:solid 1px #993399;
+	border-radius: 6px;
+	background-color:#993399;
+	text-align: center;
+}
+
+#voltar:hover {
+	color:#993399 ;
+	background-color: white;
+}
+
+img{
+	margin-left: 100px;
+}
