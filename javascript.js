@@ -1,3 +1,5 @@
+
+
 let mbasic = document.getElementById('manualb');
 let all = document.querySelector(".container");
 let mespecifico = document.getElementById('manuale');
@@ -5,6 +7,7 @@ let homemenu = document.getElementById('home');
 let m1 = document.getElementById('firstm');
 let m2 = document.getElementById('secondm');
 let btnAll = document.getElementById('buttons')
+let btnRLogin = document.getElementById('rLogin')
 
 let btn = document.getElementById('basico');
 let btn2 = document.getElementById('especifico');
@@ -16,6 +19,8 @@ btn.addEventListener("click", firstmanual);
 btn2.addEventListener("click", secondmanual);
 
 homemenu.addEventListener("click", home);
+
+btnRLogin.addEventListener("click", rLogin)
 
 function firstmanual() {
 	all.style.display = 'block';
@@ -35,3 +40,12 @@ function home() {
 	all.style.display = "none";
 	btnAll.style.display = "block";	
 }
+
+function rLogin(){
+	window.location = "login.html";
+}
+
+function firstpage(){
+	window.location = "login.html"
+}
+

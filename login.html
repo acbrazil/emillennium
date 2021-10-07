@@ -5,11 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link href="./style/style.css" rel="stylesheet">
 </head>
 <body>
     <h1>Login</h1>
-    <input type="text" id="login" placeholder="E-mail">
-    <input type="password" id="password" placeholder="Senha">
-    <button>Entra</button>
+    <div id="inputs">
+            <input type="text" id="email" runat="server" placeholder="E-mail" name="username" required="" />
+            <input type="password" id="password" runat="server" placeholder="Senha" name="password" required="" />
+            <button id="entrar">Entrar</button>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="./login.js"></script>
 </body> 
 </html>
