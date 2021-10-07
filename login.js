@@ -16,7 +16,7 @@ function login() {
         let l = usuarios[i].login;
         let s = usuarios[i].senha;
         if (l === usuario && s === senha) {
-            window.location = "index.html";
+            window.location = "container.html";
             return true;
         }
     }

@@ -1,5 +1,3 @@
-
-
 let mbasic = document.getElementById('manualb');
 let all = document.querySelector(".container");
 let mespecifico = document.getElementById('manuale');
@@ -42,10 +40,8 @@ function home() {
 }
 
 function rLogin(){
-	window.location = "login.html";
+	window.location = "index.html";
 }
 
-function firstpage(){
-	window.location = "login.html"
-}
+
 
