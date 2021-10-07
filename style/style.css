@@ -183,5 +183,31 @@ img{
 }
 
 #inputs{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: auto;
+	width: 300px;
+	height: 300px;
 	
+}
+
+input{
+	font-size: large;
+	font-weight: bold;
+	color: #4b204b;
+	margin-bottom: 20px;
+	height: 40px;
+	border-radius: 10px;
+	border: solid #4b204b 5px;
+}
+
+#logins{
+	margin-top: 50px;
+}
+
+#entrar{
+	margin-right: auto;
+	width: 200px;
+	height: 40px;
 }
