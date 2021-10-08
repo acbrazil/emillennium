@@ -1,6 +1,6 @@
 
 let usuarios = [
-    {"login": "administrativo", "senha": "acbrazil4795"},
+    {"login": "adm", "senha": "adm"},
     {"login": "mamae", "senha": "abacaxi"},
     {"login": "papai", "senha": "melancia"},
 ]
