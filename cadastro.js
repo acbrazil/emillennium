@@ -5,5 +5,5 @@ function cadastrando() {
     let csenha = document.getElementsByName('cpassword')[0].value;
     let cusuario = document.getElementsByName('cusername')[0].value.toLowerCase();
     usuarios.push({"login": cusuario, "senha": csenha})
-    window.location = "index.html";
+    //window.location = "index.html";
 }

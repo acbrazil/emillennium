@@ -8,7 +8,38 @@
     <link href="./style/style.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Login</h1>
+    <header>
+		<h1 id="title">Manuais e-Millennium</h1>
+		<div id="buttons">
+			<button id="basico">Manual Básico</button>
+			<button id="especifico">Manual Específico</button>
+		</div>
+
+		<div id="rLogin">
+			<button>Desconectar</button>
+		</div>
+
+		<div class="menu">
+			<div id="home">
+				<p>Home</p>
+			</div>
+			<div id="firstm">
+				<p>Básico</p>
+			</div>
+			<div id="secondm">
+				<p>Específico</p>
+			</div>
+		</div>
+	</header>
+    <h1 id= "cadastroh1">Cadastro</h1>
+    <div id="cadastro_inputs">
+        <div id="cadastro_logins">
+            <input type="text" id="cemail" runat="server" placeholder="E-mail" name="cusername" required="" />
+            <input type="password" id="cpassword" runat="server" placeholder="Cadastrar Senha" name="cpassword" required="" />
+        </div>    
+            <button id="cadastrar">Cadastro</button>
+    </div>
+    <h1 id="loginh1">Login</h1>
     <div id="inputs">
         <div id="logins">
             <input type="text" id="email" runat="server" placeholder="E-mail" name="username" required="" />
@@ -17,14 +48,442 @@
             <button id="entrar">Entrar</button>
     </div>
 
+    <div class="container">
+        <div id="manualb"> 
+        <h2>Manuais Básicos</h2>
+            
+            <h3 id="pv">1• Pedido de venda varejo E-commerce.(Verificar mais detalhes)</h3> 
+                    <ol> 
+                            <li> Em Venda >
+                            Pedido de Venda :</li> 
+                        <li>Aprovar pedido 
+                            <ul> 
+                                <li>Ações > Aprovar site ACBR</li> 
+                            </ul> 
+                        </li> 
+                        <li>Verificar Status Workflow 
+                            <ul>
+                                <li>Verificar se está com status AG LOGISTICA AG. FATURAMENTO</li>
+                            </ul> 
+                        </li> 
+                        <li>Verificar dados do pedido 
+                            <ul> 
+                                <li>Verificar Transportadora (Total)</li> 
+                                <li>Verificar filial de estoque0001</li> 
+                            </ul> 
+                        </li>    
+                        <li>Em Logística > Expedição > Pré-Faturamento de Saida 
+                            <ul> 
+                                <li>Procurar pedido</li> 
+                                <li>Exclui Conferencia.</li> 
+                            </ul> 
+                        </li> 
+                        <li>Aguardar Apx. 1 min até aparecerpara Unilog</li> 
+                    </ol>  
+    
+                <h3> 2 • Pedido de venda Atacado E-commerce</h3>
+                    <ol>
+                        <li>Em Venda > Pedido de Venda :</li>
+                        <li>Verificar Status Workflow</li>
+                            • Verificar se está com status AG LOGISTICA AG. FATURAMENTO
+                        <li>Verificar dados do pedido
+                            • Verificar Transportadora (Total) 
+                            • Verificar filial de estoque 0002</li>     
+                        <li>Em Logística > Expedição > Pré-Faturamento de Saida
+                            • Procurar pedido
+                            • Exclui Conferencia.</li>
+                        <li>Aguardar Apx. 1 min até aparecer para Unilog</li> 
+                    </ol>
+    
+                <h3>3 • Pedido NF de Transferência </h3>
+                <ol> 
+                    <li>Em Pedido de Venda :</li>
+                    <li>Incluir Venda >pedido de venda</li> 
+                    <li>Em tipo de pedido selecionar transferência</li>
+                    <li>Verificar Filial do pedido 0002</li>
+                    <li>Incluir  itens</li>
+                    <li>Verificar transportadora (Total Express)</li>
+                    <li>Em Logistica > Expedição > Pré-Faturamento de Saida 
+                             • Excluir conferencia 
+                    Aguardar Apx. 1 min até aparecer para Unilog</li>
+                </ol>    
+    
+                <h3>4 • Consignação</h3>
+    
+    
+                <h3>5 • Lançamento de XML para conferencia</h3>
+                    <ol> 
+                        <li>  Em Compras > Movimentações > Recebimento de compra</li>
+                        <li> Selecionar filial de conferencia 00204</li>
+                        <li> Importar XML</li>
+                        <li> Com romaneio identificar a quantidade de cada SKU</li>
+                        <li> Efetivar</li>
+                    </ol>
+    
+                <h3>6 • Lançamento de estoque manual</h3>
+                    <ol>
+                        <li>Logistica > Recebimento > Movimentações > Entrada de produto</li>
+                        <li>Selecionar Filial /Filial de estoque</li>
+                        <li>Incluir SKU e quantidade</li>
+                        <li>Efetivar</li>
+                    </ol>
+    
+                <h3>6 • Saída de estoque manual</h3>
+                    <ol>
+                        <li>Logistica > Expedição > Movimentações > Saída de produto</li>
+                        <li>Selecionar Filial /Filial de estoque</li>
+                        <li>Incluir SKU e quantidade</li>
+                        <li>Efetivar</li>
+                    </ol>
+    
+                <h3>7 • Substituição de estoque</h3>	
+                    <ol> 
+                        <li>Logistica > Estoque > Inventário</li>
+                        <li>
+                            Incluir Inventário
+                            <ul>
+                                <li>Preencher nome inventário</li>
+                                <li>Preencher filial</li>
+                                <li>Preencher tipo de inventário</li>
+                                <li>Efetivar</li>
+                            </ul>
+                        </li>	
+                        <li>Ações > Liberar contagem</li>
+                        <li>Logistica > Estoque > Contagem de Inventário
+                            <ul>
+                                <li>Incluir Contagem</li>
+                                <li>Selecionar inventário</li>
+                                <li>em Coletor de dados selecionar arquivo de dados</li>
+                                <li>Escolher um item pelo EAN para verificar se houve alteração</li>
+                                <li>Criar bloco de notas com o item no padrão do layout adicionando 1 em quantidade (precisa ter 5 dígitos no final)</li>
+                                <li>Efetivar</li>
+                                <li>Mudar para filtro iniciado e Selecionar inventário (iniciado)
+                                    <ul>
+                                        <li>Ações > Ajusta estoque</li>
+                                    </ul>
+                                </li>
+                                <li>Efetivar</li>
+                            </ul> 
+                        </li>
+                    </ol>
+    
+                <h3>7 • Pedido por (Londrina) E-commerce</h3>
+                    <ol>
+                        <li>Em Venda > Pedido de Venda:</li> 
+                        <li>Alterar Transportadora e Filial de estoque:
+                            <ul>
+                                <li>Ações > Alterar Transportadora para Pinitti (Jadlog)</li>
+                                <li>Ações > Alterar Filial para 00300 (Londrina)</li>
+                            </ul>
+                        </li>
+                        <li>Excluir pré-faturamento antigo</li>
+                        <li>Em Logística > Expedição > Pré-Faturamento de Saída  
+                            <ul>
+                                <li>Ações > Expedição > Efetivar</li>
+                                <li>Excluir pré-faturamento</li>
+                            </ul>
+                        </li>
+                        <li>Aguardar na tela de pré-faturamento o novo pré-fat
+                            <ul> 
+                                <li>Conferir pedido:   Ações > Conferir Pré-Faturamento</li>
+                            </ul>
+                        </li>
+                        <li>Faturar pedido: Logistica > Expedição > Expedição de pré-fat de saída 
+                            <ul>
+                                <li>Incluir número de pré-faturamento.</li>
+                            </ul>	
+                        </li>
+                        <li>Será gerado NF e Etiqueta de transporte</li>
+                    </ol>
+    
+                <h3>8 • Pedido manual (Londrina)</h3>
+                    <ol>
+                        <li>Em Venda > Pedido de Venda :
+                            <ul>
+                                <li>Incluir pedido de venda</li>
+                            </ul>
+                        </li> 
+                        <li>Em tipo de pedido selecionar e-commerce</li>
+                        <li>Alterar pedido para Filial 00300 (Londrina)</li>
+                        <li>Incluir itens</li>
+                        <li>Alterar transportadora para Pinotti</li>	
+                        <li>Em Logistica > Expedição > Pré-Faturamento de Saida</li>
+                         <li>Conferir pedido:   Ações > Conferir Pré-Faturamento</li>
+                        <li>Faturar pedido: Logistica > Expedição > Expedição de pré-fat de saída
+                            <ul>
+                                <li>Incluir número de pré-faturamento</li>
+                            </ul>
+                        </li>
+                    </ol>
+                
+                <h3>9 • Pedido manual Unilog ES para (CPF)</h3>
+                    <ol>
+                        <li>Em Venda > Pedido de Venda :</li>
+                        <li>Incluir pedido de venda </li>
+                        <li>Em tipo de pedido selecionar e-commerce</li>
+                        <li>Altar pedido para Filial 0002</li>
+                        <li>Incluir itens</li>
+                        <li>Alterar transportadora para Total Express</li>
+                        <li>Em Logistica > Expedição > Pré-Faturamento de Saida</li>
+                        <li>Procurar pelo número do pedido de venda</li>
+                        <li>Desmarcar flag “pendente de impressão”</li>
+                        <li>Deixar campo “entregue” -> null</li>
+                        <li>Excluir conferencia </li>
+                        <li>Aguardar Apx. 1 min até aparecer para Unilog</li>
+                    </ol> 
+    
+                <h3>10 • Pedido manual Unilog ES para (CNPJ)</h3>
+                    <ol>
+                        <li>Em Venda > Pedido de Venda :</li>
+                        <li>Incluir pedido de venda </li>
+                        <li>Em tipo de pedido selecionar atacado</li>
+                        <li>Altar pedido para Filial 0002</li>
+                        <li>Incluir itens</li>
+                        <li>Alterar transportadora para Total Express</li>
+                        <li>Em Logistica > Expedição > Pré-Faturamento de Saida</li>
+                        <li>Procurar pelo número do pedido de venda</li>
+                        <li>Desmarcar flag “pendente de impressão”</li>
+                        <li>Deixar campo “entregue” -> null</li>
+                        <li>Excluir conferencia </li>
+                        <li>Aguardar Apx. 1 min até aparecer para Unilog </li>
+                    </ol>  
+    
+    
+                <h3>11 •  Transferência de estoque filia 0002 para 0001</h3> 
+                    <ol>
+                    <li>Em Logística > Expedição > Movimentações > Transferência de estoque</li>
+                    <li>Em Filial, incluir filial de origem do estoque  </li>
+                    <li>Em Filial Destino, incluir filial de destino do estoque  </li>
+                    <li>Incluir itens</li>
+                    <li>Incluir transportadora</li>
+                    <li>Incluir tipo de frete </li>
+                    </ol>
+    
+                <h3>12 e • 13  • Cancelamento de Pedido</h3> 
+                    <ol>  
+                        <li>Ter em mãos numero de pedido e nome do cliente</li>
+                        <li>Vendas > Consulta Movimentações.
+                            <ul>
+                                <li>Procurar movimento</li>
+                                <li>Ações > Cancela  Movimento</li>
+                                <li>Ações > Cancela NFe </li>
+                            </ul>
+                        </li>
+                        <li>Em Vendas > Pedido de venda > 
+                            <ul>
+                              <li>Ações > Suspender Operações</li>
+                              <li>Ações > quitar pedido.</li>
+                                  <ul>
+                                    <li>Ativar todos os flags (Essa ação irá cancelar o pedido na Vtex)</li>
+                                </ul> 
+                            </ul>
+                        </li>
+                    </ol>
+    
+        </div>
+        <div id="manuale">			
+        <h2>Manuais Específicos</h2>
+    
+                <h3> ETIQUETA DE VENDA <a href="./pages/etiquetas_venda.html">(Verificar mais detalhes) </a></h3>
+                    <ol>
+                        <li>Entrar nos pedidos de venda e buscar pelo pedido</li>
+                        <li>Pegar código cliente e pesquisar na movimentação de venda</li>
+                        <li>Ações -> etiqueta de transporte -> Sigep</li>
+                    </ol>
+                <h3>INSTALAÇÃO SISTEMA</h3>
+                    <ol>
+                        <li>Instalar normal, entrar no local de instalação</li>
+                        <li>Abrir wtgconfig, colocar IP, configurar 2 campos 99 (se caso não der certo, desmarcar forçar/outros campos</li>
+                        <li>Abrir gerenciador de usuários para carregar o restante, depois de tudo, abrir business millennium</li>
+                        <li>IP: 179.124.195.142</li>
+                    </ol>
+                <h3>RESOLVENDO ERROS Allpick</h3>
+                    <ol>
+                        <li>Sempre deixar tela de pedido de venda e pré faturamento abertas</li>
+                        <li>Quando for erro de cadastro
+                            <ul>
+                                <li>Abrir préfat, pesquisar pelo número do cliente no pedido de venda</li>
+                                <li>Entrar no pedido e clicar em cima de cliente com o botão direito -> alterar cliente</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Caso o erro seja “não conferido”
+                            <ul> 
+                                <li>Pesquisar pelo pré-faturamento</li>
+                                <li>Ações -> conferir pré fat</li>
+                            </ul>
+                        </li>
+                    </ol>			
+                <h3>EMBARQUES</h3>
+                    <ol>
+                        <li>Conferir todos os dias no começo do dia os embarques
+                            <ul>
+                                <li>Logística -> Expedição -> Embarque</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Conferir se há embarques “em preparação”
+                            <ul>
+                                <li>Ações -> Altera Status</li> 
+                                <li>Digitar placa ABC0001 ou ABC0002 (depende da filial)</li>
+                                <li>Alterar Status LIBERADO PARA EMBARQUE</li>
+                                <li>Alterar Status EMBARQUE CONCLUÍDO</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Verificar se há pedidos para realizar embarques, pedidos que já estão embarcados no Allpick porém não foram para embarque
+                            <ul>
+                                <li>Incluir embarque, escolher filial</li>
+                                <li>Escolher transportadora</li>
+                                <li>Clicar em itens de embarque e clicar na lupa</li>
+                                <li>Filtrar por data</li>
+                                <li>Efetuar embarque dos pedidos que estão marcados como “embarcados” no Allpick</li>
+                            </ul>
+                        </li>
+                    </ol>
+                <h3>CADASTRO DE PRODUTO</h3>
+                    <ol>
+                        <li>
+                            Utilizar um produto como exemplo
+                                <ul>
+                                    <li>Ações -> Copiar</li>
+                                    <li>Mudar nome</li>
+                                    <li>Alterar código (sku)</li>
+                                    <li>Alterar referência (sku)</li>
+                                    <li>Olhar aba Vitrine e escolher categoria do produto, se não tiver, colocar “sem categoria”</li>
+                                    <li>Buscar produto para colocar EAN</li>
+                                </ul>
+                        </li>
+                        <li>Ações -> código de barras -> preencher EAN</li>
+                        <li>Colocar preços</li>
+                        <li>Ações -> preço de -> preencher</li>
+                        <li>
+                            Ações -> Atacado -> preencher
+                            <ul>	
+                                <li>Entrar na Vitrine para verificar se os produtos estão lá, senão estiver, clicar em óculos de sol, adicionar produtos e selecionar produtos</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Alterar preços
+                            <ul>
+                                <li>Vendas-> Formação de preço</li>
+                            </ul>
+                        </li>
+                        <li>Preços de custo/venda</li>
+                        <li>
+                            Cadastrar ID Externo
+                            <ul>
+                                <li>Vitrine de produtos</li>
+                                <li>Pesquisar produto (2cliques)</li>
+                                <li>Aba s”SKU”, no último campo preencher ID externo</li>
+                            </ul>
+                        </li>
+                        <li>Buscar produto na VETEX, copiar número entre parênteses “()”, esse é a ID externa do produto.</li>
+                    </ol>
+                <h3>LANÇAMENTO DE XML</h3>
+                    <ol>
+                        <li>Abrir Recebimento de compra</li>
+                        <li>Filial 00204 – Recebimento WMS</li>
+                        <li>Importa XML -> escolher arquivo</li>
+                        <li>Verificar item a item (principalmente quantidade) comparando com o arquivo romaneio excel e digitar o sku do produto</li>
+                        <li>Depois de certom dar OK e confirmar se a quantidade total de peças do Millennium está igual da planilha de romaneio</li>
+                        <li>Cond pagto 30 dias</li>
+                        <li>Efetivar</li>
+                        <li>Transp. Total</li>
+                        <li>Tipo frete</li>
+                        <li>Finalizar operação (f10)</li>
+                        <li>Próximo passo</li>
+                        <li>Conferir se a nota foi lançada corretamente no consulta movimentações de compra</li>
+                    </ol>
+                <h3>CONFERIR LOG DE ERRO (todos os dias)</h3>
+                    <ol>
+                        <li>Pesquisar no menu “LOG”</li>
+                        <li>Vitrine log de integração</li>
+                        <li>Filtrar por (produto, estoque, preço e pedido)</li>
+                        <li>Marcar flag de “erro” e “última atualização”</li>
+                        <li>Filtrar 2 dias para trás</li>
+                        <li>
+                            Exemplos de erro
+                                <ul>
+                                    <li>Erro ao importar pedido -> Id do sku não encontrado</li>
+                                </ul>
+                        </li>
+                        <li>Isso provavelmente acontece quando no pedido tem alguma bolsa ou acessório, pois não tem esses itens no Millennium</li>
+                        <li>Passar para o Alisson desmembrar o pedido, para a bolsa ir para o sistema “bling” e o óculos ficar sozinho para se comunicar com o sistema</li>
+                    </ol>
+    
+                <h3>COPIAR PEDIDO</h3>
+                    <ol>
+                        <li>Ações -> Copiar pedido</li>
+                        <li> *Se caso a filial estiver 1, trocar para filial 2</li>
+                        <li> *Caso o pedido fique "AG ESTOQUE", perguntar para o alisson se tem estoque do produto</li>
+                        <li>Efetivar</li>
+                        <li>Depois, seguir manual do Criar pedido</li>
+                    </ol>
+    
+                <h3>ERRO DE PEDIDO E PRECISANDO COPIAR UM PEDIDO (pode ser um pedido com erro que precisa ser feito outro)</h3>
+                    <ol>
+                        <li>Procurar na tela de vendas o pedido</li>
+                        <li>Suspender operação
+                            <ul>
+                                <li>Ações -> suspender operação</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Cancelar pré faturamento
+                            <ul>
+                                <li>Excluir expedição</li>
+                            </ul>
+                        </li>
+                        <li>Ações -> expedição</li>
+                    </ol>
+        </div>
+    
+        </div>
+
+        <div class="containervenda"> 
+            <div id="tutorial"> 
+            <h3>1• Pedido de venda varejo E-commerce</h3> <ol> <li> Em Venda >
+            Pedido de Venda :</li> <li>Aprovar pedido <ul> <li>Ações > Aprovar
+            site ACBR</li> </ul> </li> <li>Verificar Status Workflow <ul>
+            <li>Verificar se está com status AG LOGISTICA AG. FATURAMENTO</li>
+            </ul> </li> <li>Verificar dados do pedido <ul> <li>Verificar
+            Transportadora (Total)</li> <li>Verificar filial de estoque
+            0001</li> </ul> </li>    <li>Em Logística > Expedição >
+            Pré-Faturamento de Saida <ul> <li>Procurar pedido</li> <li>Exclui
+            Conferencia.</li> </ul> </li> <li>Aguardar Apx. 1 min até aparecer
+            para Unilog</li> </ol>  
+            <img src="../assets/pedidovenda1.png">
+            <img src="../assets/pedidovenda2.png">
+            <img src="../assets/pedidovenda3.png">
+            <img src="../assets/pedidovenda4.png">
+            <img src="../assets/pedidovenda5.png">
+            <img src="../assets/pedidovenda6.png">
+            <img src="../assets/pedidovenda7.png">
+    
+            </div>
+        </div>
+
+        <div class="containeretiqueta"> 
+            <div id="tutorial"> 
+            <h3> ETIQUETA DE VENDA</h3>
+                    <ol>
+                        <li>Entrar nos pedidos de venda e buscar pelo pedido</li>
+                        <li>Pegar código cliente e pesquisar na movimentação de venda</li>
+                        <li>Ações -> etiqueta de transporte -> Sigep</li>
+                    </ol> 
+            <img src="../assets/etiquetas/etiquetadevenda1.png">
+            <img src="../assets/etiquetas/etiquetadevenda2.png">
+            <img src="../assets/etiquetas/etiquetadevenda3.png">
+            <img src="../assets/etiquetas/etiquetadevenda4.png">
+            </div>
+        </div>
+    
 
 
 
 
 
-
-
-
-    <script src="./login.js"></script>
+    <script src="./javascript.js"></script>
 </body> 
 </html>

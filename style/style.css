@@ -147,6 +147,18 @@ a:hover {
 	width: 800px;
 	text-align: justify-all;
 	border:double 4mm #4b204b ;
+	display: none;
+
+}
+
+.containeretiqueta{
+	color: #ffff;
+	background-color: #ac58aa;
+	margin:auto;
+	width: 800px;
+	text-align: justify-all;
+	border:double 4mm #4b204b ;
+	display: none;
 
 }
 
@@ -210,4 +222,24 @@ input{
 	margin-right: auto;
 	width: 200px;
 	height: 40px;
+}
+
+#cadastro_inputs{
+	display: none;
+}
+
+#buttons{
+	display: none;
+}
+
+.menu{
+	display: none;
+}
+
+#cadastroh1{
+	display: none;
+}
+
+#rLogin{
+	display: none;
 }
